@@ -51,6 +51,7 @@
 /* inputs + select */
 .form-group input,
 .form-group select {
+    width: 554px;
     width: 100%;
     padding: 16px 18px;
     font-size: 18px;
@@ -59,6 +60,7 @@
     background-color: #fff;
     transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
+
 
 .form-group input:focus,
 .form-group select:focus {
@@ -77,7 +79,7 @@
 }
 
 .form-checkbox input {
-    width: 18px;
+    width: 18px !important;
     height: 18px;
 }
 
@@ -153,5 +155,12 @@
 
     .gutsch-right-block {
         max-width: 100%;
+    }
+}
+
+@media (max-width:767px) {
+
+    .form-group input {
+        width: 100%;
     }
 }
