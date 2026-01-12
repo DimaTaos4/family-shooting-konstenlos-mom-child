@@ -13,6 +13,21 @@
     background: rgba(0, 0, 0, 0.45);
 }
 
+.section-1-inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.section-1-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 100px;
+}
+
 .section-1>.container {
     position: relative;
     z-index: 2;
@@ -32,7 +47,7 @@
 
 .section-1-block-left p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px;
     color: #fff;
 }
@@ -43,30 +58,30 @@
 
 .section-1-block-right {
     max-width: 600px;
-    margin-left: auto;
+    text-align: left;
 }
 
 .section-1-block-right h3 {
-    font-weight: 700;
     font-size: 28px;
     line-height: 34px;
     color: var(--button-color);
+    margin-bottom: 30px;
 }
 
 .section-1-block-right p {
-    font-weight: 500;
     font-size: 22px;
     line-height: 27px;
     color: #fff;
+    margin-bottom: 40px;
 }
 
 .section1-btn {
     background-color: var(--button-color);
     color: #fff;
-    border-radius: 15px;
     padding: 11px 25px;
     font-size: 18px;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .section1-btn:hover {
@@ -79,8 +94,7 @@
 }
 
 .section-1-block-left2 p {
-    font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px;
     color: #fff;
 }
@@ -535,7 +549,7 @@
 .sec12-btn {
     background-color: var(--button-color);
     color: #fff;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     padding: 11px 25px;
     font-size: 18px;
     transition: 0.3s;
@@ -581,8 +595,10 @@
 .legal-privacy a {
     text-decoration: none;
     font-size: 20px;
-    color: #5e5e5e;
     transition: 0.3s ease-in-out;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
 }
 
 .legal-privacy a:hover {
@@ -597,6 +613,20 @@
 }
 
 @media (max-width:991px) {
+    .section-1-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+    }
+
+    .section-1-block-right {
+        margin-top: 32px;
+    }
+
+    .section-1-inner {
+        gap: 30px;
+    }
+
     .section-2 {
         padding-top: 45px;
         padding-bottom: 150px;
@@ -671,6 +701,16 @@
 }
 
 @media(max-width:568px) {
+    .section2-title {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .sec3-title {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
     .img-big {
         width: 300px;
     }
