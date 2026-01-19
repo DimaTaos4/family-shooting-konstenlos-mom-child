@@ -589,7 +589,6 @@
     align-items: center;
     justify-content: center;
     gap: 18px;
-    margin-top: 3rem;
 }
 
 .legal-privacy a {
@@ -601,6 +600,7 @@
     font-size: 16px;
     color: #000000;
     text-decoration: underline;
+    margin-top: 3rem;
 }
 
 .legal-privacy a:not(:last-child)::after {
