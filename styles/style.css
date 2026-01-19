@@ -593,17 +593,25 @@
 }
 
 .legal-privacy a {
+    position: relative;
+    padding: 0 12px;
     text-decoration: none;
-    font-size: 20px;
     transition: 0.3s ease-in-out;
     font-weight: 400;
     font-size: 16px;
     color: #000000;
+    text-decoration: underline;
+
 }
 
-.legal-privacy a:hover {
-    transform: translateY(-3px);
-    text-decoration: underline;
+.legal-privacy a:not(:last-child)::after {
+    content: "•";
+    position: absolute;
+    right: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+    font-size: 16px;
 }
 
 @media (max-width:1399px) {
@@ -765,10 +773,6 @@
         font-size: 18px;
     }
 
-    .legal-privacy a {
-        font-size: 18px;
-    }
-
     .sec12-btn {
         font-size: 17px;
         margin-top: 20px;
@@ -794,5 +798,11 @@
 
     .sec8-btn {
         max-width: 300px;
+    }
+}
+
+@media (max-width:496px) {
+    .legal-privacy a:not(:last-child)::after {
+        display: none;
     }
 }

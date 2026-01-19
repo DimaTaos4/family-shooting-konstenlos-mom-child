@@ -137,7 +137,7 @@ body {
     background-color: #F5EDE0 !important;
 }
 
-@media (max-width:991px) {
+@media (max-width:1170px) {
     .thank-you-block {
         text-align: center;
     }
